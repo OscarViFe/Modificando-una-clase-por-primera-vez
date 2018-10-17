@@ -92,7 +92,21 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+        public void amanecer()
+    {
+        if (sun !=null) // only if it's painted already...
+        {
+            sun.slowMoveVertical(-120);
+        }
+    }
     
+    public void atardecer()
+    {
+        if (sun !=null) // only if it's painted already...
+        {
+            sun.slowMoveVertical(120);
+        }
+    }
 
 }
         
